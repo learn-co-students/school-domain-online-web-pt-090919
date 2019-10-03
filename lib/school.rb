@@ -39,8 +39,8 @@ class School
   
   def sort #sort students
     # students in each respective value in alphabetical order
-    self.roster.each do |grade, students|
-        students.sort!
+    self.roster.collect do |grade, students|
+        students.sort
     end
   end  
   
